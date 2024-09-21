@@ -47,19 +47,15 @@
 }
 
 #email {
-    max-width: 200px;
+    max-width: 250px;
 }
 
-.subscribe>form {
+.subscribe > form {
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .read, .download, .text2, .text1 {
-    
-   
     height: 100px;
     color: white;
     padding-top: 20px;
@@ -70,7 +66,6 @@
 
 .read {
     background-color:rgb(0, 53, 20);
-       
 }
 
 .download {
@@ -284,6 +279,9 @@ a:hover {
     color: black;
 }
 
+.right > a:hover {
+    color:#01b150;
+}
 
 
 /* Small screen */
