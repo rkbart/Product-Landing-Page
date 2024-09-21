@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto";
+    
 }
 
 .header {
@@ -38,8 +39,11 @@
     gap:10px;
 }
 
-.read, .download, #text1 {
-    text-align: center;
+#hero {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding-top: 35px;
 }
 
 #email {
@@ -47,9 +51,47 @@
 }
 
 .subscribe>form {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.read, .download, .text2, .text1 {
+    
+   
+    height: 100px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px; 
+    width: 100%;
+    text-align: center;
+}
+
+.read {
+    background-color:rgb(0, 53, 20);
+       
+}
+
+.download {
+    background-color:#01b150;
+    }
+
+.text2 {
+    color:#242a2e;
+   padding-bottom: 20px;
+   height: auto;
+}
+
+#form {
+    display: flex;
+    gap: 10px
+}
+
+#submit {
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
 }
 
 #news {
@@ -58,6 +100,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 15px;
+    padding-top: 35px;
 }
 
 #news-img {
@@ -90,6 +133,7 @@
 
 h5 {
     text-align: center;
+    
 }
 
 /* Solid border */
@@ -109,6 +153,7 @@ hr.small {
 
 h1 {
     text-align: center;
+
 }
 
 /* Cards */
@@ -141,7 +186,7 @@ h1 {
   
   .card4:hover, .card5:hover, .card6:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    cursor: pointer;
+   
   }
 
 .card4>img, .card5>img, .card6>img {
@@ -152,13 +197,15 @@ h1 {
   .container {
     padding: 2px 16px;
   }
-
+#partner {
+    display: flex;
+    justify-content: center;
+}
   #partner-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
     width: 80%;
     margin-bottom: 4%;
   }
@@ -206,16 +253,7 @@ h1 {
     background-color: darkgray;
   }
 
-/* #testi-img-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    margin-bottom: 25px;
- }
 
- #testi-img-container>img{
-    width: 10%;
- } */
 
 footer {
     margin-top: 20px;
@@ -246,42 +284,7 @@ a:hover {
     color: black;
 }
 
-.hero-video-container {
-    width: 500px;
-}
 
-.read, .download, .text2, .subscribe {
-    height: 100px;
-    color: white;
-    padding-top: 20px;
-    padding-left: 30px; 
-    width: 100%;
-}
-
-.read {
-    background-color:rgb(0, 53, 20);
-}
-
-.download {
-    background-color:#01b150;
-}
-
-.text2 {
-    color:#242a2e;
-   padding-bottom: 20px;
-   height: auto;
-}
-
-#form {
-    display: flex;
-    gap: 10px
-}
-
-#submit {
-    width: auto;
-    padding: 5px;
-    cursor: pointer;
-}
 
 /* Small screen */
 @media only screen and (max-width: 600px) {
@@ -297,6 +300,12 @@ a:hover {
     }
     .right {
         display: none;
+    }
+
+    #video {
+        width: 90%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -346,3 +355,5 @@ a:hover {
         display: none;
     }
 }
+
+
