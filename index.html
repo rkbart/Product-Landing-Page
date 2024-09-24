@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Grabeh. The Everyday Everything App.</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- <link rel="icon" href="assets/shopee-icon.png"> -->
   <link href="https://assets.grab.com/wp-content/uploads/media/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,42 +13,40 @@
 </head>
 
 <body>
-  <header class="header">
-  <div class="nav" id="nav-bar">
+  <header class="header"> <!--user story #1: header element with id="header"-->
+  <nav class="nav" id="nav-bar"> <!-- user story #3: nav element with id="nav-bar"-->
+    
     <div class="left">
-      <a href="#hero"><img id="header-img" class="grab-logo" src="assets/grab_logo.png" alt="grab logo"></a>
+      <a href="#hero">
+        <img id="header-img" class="grab-logo" src="assets/grab_logo.png" alt="grab logo"> <!-- user story #2: image within header element with id="header-img"-->
+      </a>
       
       <div class="grab-header">
         <a href="#hero">
-          <i class="fa-solid fa-bars"></i>
+          <i id="hambuger" class="fa-solid fa-bars"></i>
         </a>
       </div>
-      
+     
       <span id="caption">Making every day better.</span>
-      
     </div>
     
-    <div class="right">
-      <a class="nav-link" href="#whatsnew">What's New</a>
+    <div class="right" id="right"> <!-- user story #4: clickable elements with class="nav-link"-->
+      <a class="nav-link" href="#whatsnew">What's New</a> <!-- user story #6: .nav-link button connected to #whatsnew section-->
       <a class="nav-link" href="#partner">Be Our Partner</a>
       <a class="nav-link" href="https://help.grab.com/passenger/en-ph/">Help Center</a>
-     
     </div>
-  </div>
+  </nav>
 </header>
 
   <section id="hero">
-    <div id="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YsUazQ543uY?si=-ej-o9m-hs3Q2C74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <!-- <video id="video" width="100%" height="100%" style="object-fit:contain;" playsinline="" preload="" loop="" muted="" autoplay="">
-        <source src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_sg_q50.webm" type="video/webm">
-      </video> -->
+    <div id="video-container"> 
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YsUazQ543uY?si=-ej-o9m-hs3Q2C74" title="Grab Ad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- user story #6: embedded youtube video with id="video" -->
     </div>
   </section>
   
   <div class="second-container">
     <div class="read">
-      <h3><a href="https://www.grab.com/ph/about/">Read About Us</a></h2>
+      <h3><a id="about-link" href="https://www.grab.com/ph/about/">Read About Us</a></h2>
     </div>
 
     <div class="download">
@@ -62,9 +59,11 @@
   
 
     <div class="subscribe">
-      <form method="post" id="form">
-        <input class="w3-input w3-border w3-round" type="email" id="email" placeholder="email address">
-        <input id="submit" type="submit" value="Subscribe to our newsletter" >
+      <form method="post" id="form"> <!-- user story #7: form element with id="form"-->
+        <input type="email" id="email" placeholder="email address" class="w3-input w3-border w3-round" required> <!--user story #8: input field with id="email"-->
+        <!--user story #9: email input field with placeholder--> <!--user story #10: HTML5 validation-->
+        <input type="submit" id="submit" value="Subscribe to our newsletter"> <!--user story #11: submit input type with id="submit" -->
+        <!--user story #12: when submit is clicked, email is submitted to a static page using "post" method-->
       </form>
     </div>
   </div>
@@ -244,6 +243,8 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
+
 
 </html>

@@ -6,12 +6,36 @@
     
 }
 
-.header {
-    position: sticky;
+
+.header { 
+    position: sticky; /*  user story #13: navbar is always on top using sticky position in header element */
     top:0;
-    
 }
-.nav {
+
+/* user story #14: landing page should have at least 1 media query */
+@media only screen and (max-width: 600px) {
+    .grab-logo {
+        display: none;
+    }
+
+    #caption {
+        display: none;
+    }
+    .grab-header {
+        display: block;
+    }
+    .right {
+        display: none;
+    }
+
+    #video-container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nav { /* user story #15: page should utilize CSS flexbox at least once */
     display: flex;
     height: 50px;
     background-color: white;
@@ -21,8 +45,6 @@
     color: #242a2e;
     padding-inline: 15px;
     font-weight: bold;
-    /* position: sticky;
-    top: 0; */
     padding-bottom: 10px;
 }
 
@@ -284,31 +306,10 @@ a:hover {
 }
 
 
-/* Small screen */
-@media only screen and (min-width: 600px) {
-    .grab-logo {
-        display: none;
-    }
 
-    #caption {
-        display: none;
-    }
-    .grab-header {
-        display: block;
-    }
-    .right {
-        display: none;
-    }
-
-    #video {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-    }
-}
 
 /* Mid Screen */
-@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+@media only screen and (min-width: 601px) and (max-width: 1023px)  {
     .grab-header {
         display: none
     }
